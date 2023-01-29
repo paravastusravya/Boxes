@@ -1,0 +1,81 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.boxes-app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: 32px;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 64px;
+  }
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .boxes {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+}
+@media screen and (min-width: 768px) {
+  .box {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.small-box {
+  background-color: #fbbf24;
+  width: 80px;
+  height: 80px;
+}
+
+.medium-box {
+  background-color: #38bdf8;
+  width: 120px;
+  height: 120px;
+}
+.large-box {
+  background-color: #ec4899;
+  width: 160px;
+  height: 160px;
+}
+.description {
+  font-family: "Bree Serif";
+  font-size: 15px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .description {
+    font-size: 20px;
+  }
+}
